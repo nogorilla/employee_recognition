@@ -15,9 +15,12 @@ or
 ./anniversary.rb employee_data.csv
 ```
 
-## CSV Format
+### CSV Format
 Expected Input is a CSV with the following fields:
 `employee_id, first_name, last_name, hire_date, supervisor_id`
+
+### Date Format
+Date must be formated according to ISO-8601 as `YYYY-MM-DD` otherwise current date will be used.
 
 
 ## Output
