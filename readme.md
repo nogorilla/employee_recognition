@@ -8,7 +8,7 @@ Two arguments are required:
 
 example:
 ```
-./anniversary.rb employee_data.csv 2017
+./anniversary.rb employee_data.csv 2017-10-10
 ```
 or 
 ```
@@ -18,6 +18,8 @@ or
 ### CSV Format
 Expected Input is a CSV with the following fields:
 `employee_id, first_name, last_name, hire_date, supervisor_id`
+
+**NOTE:** hire_date must be in format `YYYY-MM-DD` otherwise an error will be raised and processing will not continue
 
 ### Date Format
 Date must be formated according to ISO-8601 as `YYYY-MM-DD` otherwise current date will be used.
